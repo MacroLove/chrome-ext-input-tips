@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+  "name": "Input Tips",
+  "version": "1.0.0",
+
+  "author": "Macro Zhao",
+  "description": "Quick to input your own shortcuts words.",
+  "icons": {
+    "16": "img/icon-16.png",
+    "48": "img/icon-48.png",
+    "128": "img/icon-128.png"
+  },
+
+  "browser_action": {},
+
+  "permissions": [
+    "storage"
+  ],
+
+  "background": {
+    "scripts": [
+      "main/js/event.js"
+    ]
+  },
+
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "run_at": "document_idle",
+      "css": [
+        "main/css/style.css"
+      ],
+      "js": [
+        "main/js/content.js"
+      ],
+      "matches": [
+        "file:///*",
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ],
+
+  "options_page": "options/index.html"
+}

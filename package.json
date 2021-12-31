@@ -1,0 +1,30 @@
+{
+  "name": "tips",
+  "version": "1.0.0",
+  "description": "Show input tips.",
+  "main": "main.js",
+  "scripts": {
+    "b": "gulp js jsOptions"
+  },
+  "author": "Macro Zhao",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-if": "latest",
+    "gulp-uglify": "latest",
+    "gulp-useref": "latest",
+    "gulp-buffer": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-tap": "latest"
+  },
+  "dependencies": {
+    "node-gyp": "latest",
+    "browserify": "latest",
+    "event-emitter": "latest",
+    "fuse.js": "latest",
+    "jquery": "latest",
+    "textarea-caret": "latest",
+    "textarea-caret-position": "latest"
+  }
+}
